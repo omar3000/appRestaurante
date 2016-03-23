@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:background="@android:color/transparent"
+              android:weightSum="1"
+              android:layout_marginTop="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/negro"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tipo de carne"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carnitas"
+            android:id="@+id/rbCarnitas"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lengua"
+            android:id="@+id/rbLengua"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buche"
+            android:id="@+id/rbBuche"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panza"
+            android:id="@+id/rbPanza"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+</LinearLayout>
