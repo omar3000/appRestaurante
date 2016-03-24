@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="match_parent"
+              android:layout_width="wrap_content"
               android:layout_height="match_parent"
               android:layout_gravity="center_horizontal"
               android:background="@android:color/transparent"
@@ -31,8 +31,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Carnitas"
-            android:id="@+id/rbCarnitas"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/blanco"
             android:textStyle="bold"
@@ -42,8 +42,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lengua"
-            android:id="@+id/rbLengua"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton2"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/blanco"
             android:textStyle="bold"
@@ -53,8 +53,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buche"
-            android:id="@+id/rbBuche"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton3"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/blanco"
             android:textStyle="bold"
@@ -64,8 +64,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Panza"
-            android:id="@+id/rbPanza"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton4"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/blanco"
             android:textStyle="bold"

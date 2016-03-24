@@ -48,7 +48,7 @@
                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnMesa1"
+                        android:id="@+id/imageButton1"
                         android:background="@drawable/mesa1"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="30dp"/>
@@ -56,7 +56,7 @@
                    <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnMesa2"
+                        android:id="@+id/imageButton2"
                         android:background="@drawable/mesa2"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="30dp"/>
@@ -64,7 +64,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnMesa3"
+                        android:id="@+id/imageButton3"
                         android:background="@drawable/mesa3"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="30dp"/>
@@ -72,7 +72,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa4"
+                       android:id="@+id/imageButton4"
                        android:background="@drawable/mesa4"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="30dp"/>
@@ -83,14 +83,14 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa5"
+                       android:id="@+id/imageButton5"
                        android:background="@drawable/mesa5"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa6"
+                       android:id="@+id/imageButton6"
                        android:background="@drawable/mesa6"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -98,7 +98,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa7"
+                       android:id="@+id/imageButton7"
                        android:background="@drawable/mesa7"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -106,7 +106,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa8"
+                       android:id="@+id/imageButton8"
                        android:background="@drawable/mesa8"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -115,7 +115,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa9"
+                       android:id="@+id/imageButton9"
                        android:background="@drawable/mesa9"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -123,7 +123,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa10"
+                       android:id="@+id/imageButton10"
                        android:background="@drawable/mesa10"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -131,7 +131,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa11"
+                       android:id="@+id/imageButton11"
                        android:background="@drawable/mesa11"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -139,7 +139,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa12"
+                       android:id="@+id/imageButton12"
                        android:background="@drawable/mesa12"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -148,7 +148,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa13"
+                       android:id="@+id/imageButton13"
                        android:background="@drawable/mesa13"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -156,7 +156,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa14"
+                       android:id="@+id/imageButton14"
                        android:background="@drawable/mesa14"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -164,7 +164,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa15"
+                       android:id="@+id/imageButton15"
                        android:background="@drawable/mesa15"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
@@ -172,7 +172,7 @@
                    <ImageButton
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:id="@+id/btnMesa16"
+                       android:id="@+id/imageButton16"
                        android:background="@drawable/mesa16"
                        android:layout_marginLeft="20dp"
                        android:layout_marginTop="15dp"/>
