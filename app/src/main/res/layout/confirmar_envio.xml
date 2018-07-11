@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:weightSum="1"
+    android:layout_marginTop="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:layout_centerInParent="true"
+            android:text="Codigo Empleado"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+        <TableRow>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:id="@+id/btnPin1"
+            android:onClick="ClickPin"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="2"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:id="@+id/btnPin2"
+            android:onClick="ClickPin"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:id="@+id/btnPin3"
+            android:onClick="ClickPin"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:id="@+id/btnPin4"
+            android:onClick="ClickPin"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="5"
+                android:textStyle="bold"
+                android:textSize="45sp"
+                android:id="@+id/btnPin5"
+                android:onClick="ClickPin"/>
+
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+        <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:textSize="25sp"
+            android:id="@+id/Regresar"
+            android:layout_gravity="right"
+            />
+
+        </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

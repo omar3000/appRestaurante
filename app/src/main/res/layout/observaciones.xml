@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:weightSum="1"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:inputType="textMultiLine"
+            android:background="@color/azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Observaciones"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:lines="8"
+            android:minLines="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:ems="10"
+            android:id="@+id/etObservaciones"
+            android:layout_gravity="center_horizontal" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regresar"
+                    android:textSize="25sp"
+                    android:id="@+id/Regresar"
+                    android:layout_gravity="right"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siguiente"
+                    android:textSize="25sp"
+                    android:id="@+id/Enviar"
+                    android:layout_marginLeft="100dp"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

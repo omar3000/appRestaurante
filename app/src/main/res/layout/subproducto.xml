@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:background="@android:color/transparent"
+              android:weightSum="1"
+              android:layout_marginTop="100dp"
+              android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@color/azul"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sub Producto"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <RadioGroup
+            android:id="@+id/rdgGrupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rojos"
+            android:id="@+id/rb1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:visibility="invisible"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verdes"
+            android:id="@+id/rb2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:visibility="invisible"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buche"
+            android:id="@+id/rb3"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:visibility="invisible"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panza"
+            android:id="@+id/rb4"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:visibility="invisible"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panza"
+            android:id="@+id/rb5"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/negro"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:visibility="invisible"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
