@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,13 +20,14 @@ public class MainActivity extends Activity  implements View.OnClickListener {
 
     ImageButton btnMesas[] = new ImageButton[16];
     //direccion ip del servidor y puerto actual
-    static String SERVIDOR = "http://localhost";
+    static String SERVIDOR = "http://donas.quianty.com";
 
     static String GUARDAR_PEDIDO = "/modrest/guardarPedido.php";
     static String RECUPERAR_PEDIDO = "/modrest/recuperarPedido.php";
     static String TRAER_PRODUCTOS = "/modrest/consulta.php";
     static String VERIFICAR = "/modrest/verificar.php";
     static String ELIMINAR = "/modrest/eliminar.php";
+    private long mLastClickTime = 0;
     //saber si la mesa esta activa en algun otro dispositivo
     String comparar = "abierto";
 
@@ -61,6 +63,12 @@ public class MainActivity extends Activity  implements View.OnClickListener {
     //configuramos todos los clicks de los botones en la app
     public void onClick(View arg0)
     {
+        // mis-clicking prevention, using threshold of 1000 ms
+        if (SystemClock.elapsedRealtime() - mLastClickTime < 2500){
+            return;
+        }
+        mLastClickTime = SystemClock.elapsedRealtime();
+
         String nombre;
         Resources res;
         String txt;

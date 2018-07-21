@@ -18,6 +18,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -67,6 +68,7 @@ public class Actividad2 extends Activity implements View.OnClickListener
     private final String TIPO_BEBIDAS = "Bebidas";
     private final boolean LISTA_MERCANCIA_SURTIDA = true;
     private final boolean LISTA_MERCANCIA_PENDIENTE = false;
+    private long mLastClickTime = 0;
 
 
 
@@ -131,6 +133,7 @@ public class Actividad2 extends Activity implements View.OnClickListener
         inicializar();
 
         ConectarMetodosHTTP();
+
     }
 
     private void inicializar()
@@ -152,7 +155,6 @@ public class Actividad2 extends Activity implements View.OnClickListener
             rutaImagen[i] = "";
 
         noSilla = 1;
-
     }
 
     private void configurarPestañas()
@@ -264,9 +266,10 @@ public class Actividad2 extends Activity implements View.OnClickListener
 
                                 @Override
                                 public void run() {
+
                                     if(!funcionesMerca.obtDatosJSON_2(resultado2))
                                         //errorCargar();
-                                        ;
+                                       ;
                                     else
                                     {
                                         funcionesMerca.actualizar();
@@ -279,6 +282,8 @@ public class Actividad2 extends Activity implements View.OnClickListener
             }
         };
         tr2.start();
+
+
     }
 
     //cargamos las imagenes
@@ -622,11 +627,13 @@ public class Actividad2 extends Activity implements View.OnClickListener
                 (android.graphics.Color.TRANSPARENT));
         dialog.setContentView(v);
         dialog.getWindow().setFormat(PixelFormat.TRANSLUCENT);
-        window = dialog.getWindow();
-        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.MATCH_PARENT);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-        dialog.setCancelable(false);
+        //window = dialog.getWindow();
+        //window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+              //  WindowManager.LayoutParams.MATCH_PARENT);
+        //window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
+
         dialog.show();
     }
 
@@ -716,10 +723,15 @@ public class Actividad2 extends Activity implements View.OnClickListener
                 new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog2.setContentView(dialoglayout2);
         dialog2.getWindow().setFormat(PixelFormat.TRANSLUCENT);
-        final Window window = dialog2.getWindow();
-        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.MATCH_PARENT);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+
+
+        //window = dialog2.getWindow();
+        //window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+        //  WindowManager.LayoutParams.MATCH_PARENT);
+        //window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        dialog2.setCancelable(true);
+        dialog2.setCanceledOnTouchOutside(true);
+
         dialog2.show();
     }
 
@@ -746,10 +758,12 @@ public class Actividad2 extends Activity implements View.OnClickListener
                 new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog2.setContentView(dialoglayout2);
         dialog2.getWindow().setFormat(PixelFormat.TRANSLUCENT);
-        final Window window = dialog2.getWindow();
-        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.MATCH_PARENT);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        //window = dialog2.getWindow();
+        //window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+        //  WindowManager.LayoutParams.MATCH_PARENT);
+        //window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        dialog2.setCancelable(true);
+        dialog2.setCanceledOnTouchOutside(true);
         dialog2.show();
     }
 
@@ -757,6 +771,13 @@ public class Actividad2 extends Activity implements View.OnClickListener
     public void ClickPin(View view)
     {
         String pin ="0";
+
+        // mis-clicking prevention, using threshold of 1000 ms
+        if (SystemClock.elapsedRealtime() - mLastClickTime < 2500){
+            return;
+        }
+        mLastClickTime = SystemClock.elapsedRealtime();
+
         if(view.getId() == R.id.btnPin1)
         {
             pin = "1";

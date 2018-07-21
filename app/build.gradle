@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.example.martdev.org.primeraapp"
-        minSdkVersion 15
-        targetSdkVersion 20
+        minSdkVersion 20
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        useLibrary 'org.apache.http.legacy'
     }
     buildTypes {
         release {
@@ -16,19 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
     defaultConfig {
         multiDexEnabled true
     }
-
     lintOptions {
         abortOnError false
     }
+    productFlavors {
+    }
 }
-
-
-
-
 
 
 dependencies {

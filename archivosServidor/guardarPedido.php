@@ -40,8 +40,8 @@
     if($value4 == null)
     {
 
-      //saca el ultimo folio de la serie TM
-      $consulta = "SELECT Folio FROM venta WHERE Serie = 'TM'  ORDER BY id DESC LIMIT 1";
+      //saca el ultimo folio de la serie 
+      $consulta = "SELECT Folio FROM venta WHERE Serie = 'TM'  OR  'TO'  ORDER BY id DESC LIMIT 1";
       $result = mysqli_query($conn, $consulta);
       $ultimoFolio = mysqli_fetch_assoc($result);
       if($ultimoFolio['Folio'] == null)
